@@ -20,35 +20,32 @@ import java.util.Vector;
 
 
 public class FileProject {
-    
-    
-
+    /**
+     * Constructor
+     */
     public FileProject() {
        
     }
 
-   
-    
-    
+    /**
+     * Metodo que permite crear un nuevo Archivo, para insertar los numeros en el.
+     * @param numerosGenerados
+     */
     public void CrearArchivo(Comparable[] numerosGenerados){
         try {
-            
-                
-                
 
-
-                File file = new File("NumerosAleatorios.txt");
+            File file = new File("NumerosAleatorios.txt"); ///De esta forma se Crea y/o Guarda el Nuevo Archivo
 
                 // if FileCreator doesnt exists, then create it
                 if (!file.exists()) {
                         file.createNewFile();
                 }
-
                 FileWriter fw = new FileWriter(file.getAbsoluteFile());
-                BufferedWriter bw = new BufferedWriter(fw);
+                BufferedWriter bw = new BufferedWriter(fw); ///Para escribir Archivos
+
                 for (int i=0;i<numerosGenerados.length;i++)
                 {
-                   bw.write(numerosGenerados[i].toString()+"\n");
+                   bw.write(numerosGenerados[i].toString()+"\n"); ///de esta forma guarda los numeros Generados de forma aleatoria.
                 }
 
                 bw.close();

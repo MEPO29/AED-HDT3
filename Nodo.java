@@ -10,7 +10,8 @@
 public class Nodo implements Comparable {
     private int _valor;
     private Nodo _siguiente;
-    
+
+
 public Nodo(){
     _valor = -1;
     _siguiente = null;
