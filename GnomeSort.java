@@ -10,10 +10,10 @@
 
 
 
-public class GnomeSort extends BaseSorts{
-    
-    public GnomeSort(){
-        
+public class GnomeSort extends BaseSorts {
+
+    public GnomeSort() {
+
     }
 
     public GnomeSort(Comparable[] lista)
@@ -21,43 +21,20 @@ public class GnomeSort extends BaseSorts{
     //post: ordena el arreglo de forma ascendente
     {
 
-        int numSorted = 1;
-
+        int i = 1;
+        int j = 2;
         int index;
-        while (numSorted < lista.length) {
+        while (i < lista.length) {
             //se toma el primer valor no ordenado
-            Comparable temp = lista[numSorted];
-            //se inserta en la parte del arreglo ordenado
-            for (index = numSorted; index > 0; index--) {
-
-                if (temp.compareTo(lista[index - 1]) > 0) {
-                    lista[index] = lista[index - 1];
-                } else
-                    break;
+            if (lista[i - 1].compareTo(lista[i]) <= 0) {
+                i = j;
+                j++;
+            } else {
+                Comparable tmp = lista[i - 1];
+                lista[i - 1] = lista[i];
+                lista[i--] = tmp;
+                i = (i == 0) ? j++ : i;
             }
-            //se reinserta el valor
-            lista[index] = temp;
-            numSorted++; //aumenta la cantidad de números ordenados
-        }//termina while
-
+        }
     }
-
-    }
-    //termina insertion sort ascendente
-
-    //int index = 0;
-    //int n = arr.size(); // se obtiene el tamaño del arraylist
-    //    while (index < n) {
-    //    if (index == 0)
-    //    index++; // si el índice es 0 se aumenta en uno para comparar el valor del indice menos 1
-    //    if (arr.get(index) >= arr.get(index - 1))
-    //    index++; // cuando es mayor quiere decir que "está ordenado" y por ello se aumenta en uno
-    //    else {
-    //    int temp = 0; // de lo contrario se cambian de posición
-    //    temp = arr.get(index);
-    //    arr.set(index, arr.get(index-1));
-    //    arr.set(index-1, temp);
-    //    index--; // se reduce el índice
-    //    }
-    //    }
-    //    return arr;
+}
