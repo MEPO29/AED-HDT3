@@ -1,5 +1,6 @@
 
 
+
 /*
  * Universidad del Valle de Guatemala
  * @author Diana Díaz 21066
@@ -12,44 +13,44 @@ public class Nodo implements Comparable {
     private Nodo _siguiente;
 
 
-public Nodo(){
-    _valor = -1;
-    _siguiente = null;
-}
- 
- 
-public Nodo(int valor, Nodo siguiente){
-    _valor = valor;
-    _siguiente = siguiente;
-}
+    public Nodo(){
+        _valor = -1;
+        _siguiente = null;
+    }
 
 
-public Nodo(int valor){
-    _valor = valor;
-    _siguiente = null;
-}
-    
-
-public void setValor(int valor){
-    this._valor = valor;
-}
+    public Nodo(int valor, Nodo siguiente){
+        _valor = valor;
+        _siguiente = siguiente;
+    }
 
 
-public void setSiguiente(Nodo siguiente){
-    _siguiente =  siguiente;
-}
-
-public int getValor(){
-    return _valor;
-}
+    public Nodo(int valor){
+        _valor = valor;
+        _siguiente = null;
+    }
 
 
-public Nodo getSiguiente(){
-    return _siguiente;
-}
+    public void setValor(int valor){
+        this._valor = valor;
+    }
+
+
+    public void setSiguiente(Nodo siguiente){
+        _siguiente =  siguiente;
+    }
+
+    public int getValor(){
+        return _valor;
+    }
+
+
+    public Nodo getSiguiente(){
+        return _siguiente;
+    }
 
     public boolean equals(Object other){
-        
+
         return this._valor==((Nodo)other).getValor();
     }
 
@@ -63,16 +64,16 @@ public Nodo getSiguiente(){
             resultado=-1;
         else
             resultado=0;
-        
-        
+
+
         return resultado;
-            
+
     }
-    
+
     public String toString ()
     {
         return Integer.toString(this._valor) ;
     }
-    
+
 
 }

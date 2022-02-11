@@ -15,7 +15,7 @@ public class MergeSort extends BaseSorts{
          MergeSortRecursive(list,new Comparable[list.length],0,list.length-1);
     }
 
-    private void MergeSortRecursive(Comparable[] list, Comparable temp[],int low, int high)
+    public void MergeSortRecursive(Comparable[] list, Comparable temp[],int low, int high)
     {
       
       int n = high-low+1;
@@ -32,7 +32,7 @@ public class MergeSort extends BaseSorts{
       merge(list, temp,low, middle, high);
       
    } 
-   private void merge(Comparable[] list, Comparable temp[], int low, int middle, int high)
+   public void merge(Comparable[] list, Comparable temp[], int low, int middle, int high)
    {
          int ri=low;
          int ti=low;
