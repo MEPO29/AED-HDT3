@@ -6,6 +6,8 @@
  * @author Diana Díaz 21066
  * @author Sebastián Franco 21484
  * @author Mario Puente 21290
+ * Es el que lee los numeros de los archivos
+ * Nodo.Java
  */
 
 public class Nodo implements Comparable {

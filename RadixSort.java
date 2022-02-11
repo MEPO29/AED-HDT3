@@ -5,7 +5,8 @@ import java.util.Vector;
  * @author Diana Díaz 21066
  * @author Sebastián Franco 21484
  * @author Mario Puente 21290
- * Clase que sirve para el ordenamiento BubbleSort
+ * Clase que sirve para el ordenamiento RadixSort
+ * RadixSort.java
  */
 
 

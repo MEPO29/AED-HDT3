@@ -15,6 +15,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+///Es el Main del programa
 public class HojaSorts {
 
     /**

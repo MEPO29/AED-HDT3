@@ -4,7 +4,7 @@
  * @author Sebastián Franco 21484
  * @author Mario Puente 21290
  * Clase que maneja archivos
- * 
+ * FileProject.java
  */
 
 
@@ -57,7 +57,7 @@ public class FileProject {
         }
     }
     
-    public Comparable[] LeerArchivo(){
+    public Comparable[] LeerArchivo(){ ///Se lee el archivo de esta manera
       
         int contador=0;
         int tamaño=0;
@@ -99,11 +99,10 @@ public class FileProject {
     }
 
     
-    public void CrearArchivoOrdenado(Comparable[] numerosGenerados){
+    public void CrearArchivoOrdenado(Comparable[] numerosGenerados){ ///Se crea el archivo con los numeros ordenados.
+        ///Esto se hace para compararlos
         
          try {
-            
-           
 
 
                 File file = new File("NumerosOrdenados.txt");
@@ -127,8 +126,6 @@ public class FileProject {
         } catch (IOException e) {
                 e.printStackTrace();
         }
-        
-        
         
     }
     

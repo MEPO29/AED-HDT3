@@ -7,11 +7,9 @@
  * GnomeSort.java
  */
 
-
-
-
 public class GnomeSort extends BaseSorts {
 
+    ///Es el constructor
     public GnomeSort() {
 
     }

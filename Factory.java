@@ -12,8 +12,7 @@
 
 public class Factory {
     
-    
-    
+
     //dependiendo de la entrada se instancia la clase 
     public BaseSorts getSort(String entry, Comparable[] list){
     //pre: recibe una lista de tipo comparable
