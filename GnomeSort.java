@@ -3,7 +3,7 @@
  * @author Diana Díaz 21066
  * @author Sebastián Franco 21484
  * @author Mario Puente 21290
- * Clase que ordena una lista con el algoritmo de insertion Sort
+ * Clase que ordena una lista con el algoritmo de gnome Sort
  * GnomeSort.java
  */
 
