@@ -20,10 +20,10 @@ public class RadixSort extends BaseSorts{
          * poniendo el mayor en el index atual
          *  
          */
-      public RadixSort (Comparable[] list)
+      public RadixSort (Comparable[] list){
       //pre:hay valores menores 1,000,000
        //post:los valores son ordenados en forma decreciente
-      {
+
        for(int i = 0; i < 6; i++){
            bucketPass(list, i);
        }
